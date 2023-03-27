@@ -52,7 +52,7 @@ function App() {
     database()
       .goOffline()
       .then(() => {
-        return userRef.set(32);
+        return userAgeRef.set(32);
       })
       .then(() => {
         console.log('User updated whilst offline.');
